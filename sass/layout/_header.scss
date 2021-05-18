@@ -1,0 +1,97 @@
+.header-top{
+    background-color: var(--color-header-top-banner);
+    color: var(--color-header-top-items);
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    &__icons{
+        height: 1.7rem;
+        width: 1.7rem;
+        fill: var(--color-header-top-items);
+        padding-right: .5rem;
+    }
+
+    &__leftside{
+        display: inline-block;
+        margin-left: 8rem;
+
+        &--itembox{
+            list-style: none;
+            display: flex;
+            font-size: 1.4rem;
+            font-weight: 300;
+            padding:1rem;
+            justify-content: space-between;
+            width: 30rem;
+            
+            
+            
+            
+        }
+
+        &--item-1{
+           display: flex;
+           align-items: center;
+
+ 
+        }
+        &--item-2{
+            display: flex;
+            align-items: center;
+            
+         }
+         &--item-3{
+            display: flex;
+            align-items: center;
+            
+  
+         }
+    }
+    
+    &__rightside{
+        margin-right: 20rem;
+        width: 32rem;
+        padding:1rem;
+        
+
+        &__box{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.4rem;
+            
+
+            & > *:not(:last-child){
+                padding: 0 1rem;
+                border-right: 1px solid var(--color-header-top-items);
+            }
+
+            & > *{
+                display: flex;
+                align-items: center;
+            }
+            
+            
+        }
+    }
+}
+
+.header-middle{
+
+    &__logo-box{
+        margin-left: 8rem;
+        display: block;
+    }
+    &__logo{
+        height: 10rem;
+        
+    }
+}
+
+.header-bottom{
+    background-color: var(--color-header-bottom-navbar);
+    height: 5rem;
+}
