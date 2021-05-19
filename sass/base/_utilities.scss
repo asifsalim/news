@@ -1,3 +1,14 @@
 .padding-bothside{
     padding: 0 1.5rem;
 }
+
+.link-destroyer{
+
+    &:link,
+    &:visited{
+        text-decoration: none;
+        color: var(--color-header-bottom-font);
+    }
+    
+
+}
