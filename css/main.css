@@ -156,8 +156,8 @@ body {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-shadow: 0 1rem 2rem rgba(var(--color-box-shadow-light), 0.15);
-          box-shadow: 0 1rem 2rem rgba(var(--color-box-shadow-light), 0.15);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
 
 .header-bottom__navbox {
