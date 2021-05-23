@@ -10,7 +10,7 @@
     &__icons{
         height: 1.7rem;
         width: 1.7rem;
-        fill: var(--color-header-top-items);
+        fill: currentColor;
         padding-right: .5rem;
     }
 
@@ -32,29 +32,43 @@
             
         }
 
-        &--item-1{
-           display: flex;
-           align-items: center;
-
- 
+        & > * {
+            display: flex;
+            align-items: center;
         }
-        &--item-2{
-            display: flex;
-            align-items: center;
-            
-         }
-         &--item-3{
-            display: flex;
-            align-items: center;
-            
-  
-         }
     }
     
     &__rightside{
-        margin-right: 20rem;
-        width: 32rem;
+        margin-right: 10rem;
+        width: 45rem;
         padding:1rem;
+        
+
+
+        &__link:link,
+        &__link:visited{
+            text-decoration: none;
+            color: var(--color-header-bottom-font);
+            display: flex;
+            align-items: center;
+
+            &:hover{
+                color: var(--color-header-top-items);
+            }
+            
+            
+        }
+
+        &--social-link:link,
+        &--social-link:visited{
+            text-decoration: none;
+            color: var(--color-header-top-items);
+
+            &:hover{
+                color: var(--color-header-bottom-font);
+
+            }
+        }
         
 
         &__box{
@@ -62,6 +76,8 @@
             display: flex;
             justify-content: space-between;
             font-size: 1.4rem;
+
+            
             
 
             & > *:not(:last-child){
@@ -99,7 +115,30 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    box-shadow: 0 1rem 2rem rgba(#000,.15);
+    box-shadow: 0 1rem 2rem rgba($color-box-shadow,.15);
+
+
+    &__link {
+
+
+    &:link,
+    &:visited {
+        text-decoration: none;
+        color:var(--color-header-bottom-f);
+        border-bottom: 1px solid transparent;
+        display: block;
+
+        
+
+    }
+
+    
+    
+
+    
+    }
+
+
 
     &__navbox{
         list-style: none;
@@ -107,27 +146,31 @@
         align-items: center;
         // background-color: aqua;
         text-transform: capitalize;
+        justify-content: space-between;
+        transition: all .2s;
 
         & > * {
             padding: 0 1.5rem;
             display: flex;
             align-items: center;
+            // display: block;
+
+            
         }
 
         
-
-        
-
         
     }
+
+    
 
     &__search-icon{
         background-color: blueviolet;
     }
 
     &__icons {
-        height: 2.4rem;
-        width: 2.4rem;
+        height: 2.2rem;
+        width: 2.2rem;
         fill: var(--color-header-bottom-font);
     }
 }

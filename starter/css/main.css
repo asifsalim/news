@@ -35,7 +35,6 @@ body {
 }
 
 .header-top {
-  background-color: var(--color-header-top-banner);
   color: var(--color-header-top-items);
   height: 5rem;
   display: -webkit-box;
@@ -211,3 +210,4 @@ body {
 .header {
   height: 40rem;
 }
+/*# sourceMappingURL=main.css.map */
