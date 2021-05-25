@@ -1,0 +1,58 @@
+.header-features{
+    // height: 20rem;
+    // background-color: rgb(173, 28, 28);
+    margin-top: 2rem;
+
+
+    &__box{
+
+        list-style: none;
+        // width: 25rem;
+        // background-color: purple;
+        display: flex;
+        justify-content: center;
+
+        & > *:not(:last-child){
+            border-right: 1px solid var(--color-grey-light);
+
+        }
+
+        & > * {
+            line-height: 1.5;
+            font-weight: 700;
+            font-size: 1.6rem;
+        }
+
+
+
+
+    }
+
+    &__icons{
+        width: 3rem;
+        height: 3rem;
+        fill: currentColor;
+    }
+
+    &__links {
+
+        &:link,
+        &:visited {
+        color: var(--color-header-top-items);
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        align-items: center;
+        text-decoration: none;
+        font-size: 1.6rem;
+        border-bottom: 1px solid var(--color-grey-light);
+    }
+
+
+    &:hover{
+        color: var(--color-header-bottom-navbar);
+        transition: 1s ease-in-out;
+    }
+
+    }
+}

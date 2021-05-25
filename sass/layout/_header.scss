@@ -120,6 +120,13 @@
     box-shadow: 0 1rem 2rem rgba($color-box-shadow,.15);
     // padding: 0 25rem;
 
+    &__icons {
+        height: 1.5rem;
+        width: 1.5rem;
+        fill: #fff;
+        margin-left: .5rem;
+    }
+
 
     &__link {
 
@@ -179,15 +186,9 @@
 
 
 
-    &__search-icon{
-        // background-color: blueviolet;
-    }
 
-    &__icons {
-        height: 2.4rem;
-        width: 2.4rem;
-        fill: currentColor;
-    }
+
+
 
     &__search-box{
         // background-color: orangered;
@@ -206,7 +207,15 @@
             position: absolute;
             top: 15%;
             right: 5%;
-            
+            margin-right: 2rem;
+
+        }
+
+        &--icons {
+            height: 2.4rem;
+            width: 2.4rem;
+            fill: currentColor;
+            margin-right: -2rem;
         }
 
 
@@ -227,14 +236,14 @@
 
             &::-webkit-input-placeholder{
                 font-family: inherit;
-                
+
             }
         }
 
         &--btn{
             transition: .4s;
             cursor: pointer;
-            color: var(--color);
+            color: var(--color-header-bottom-font);
         }
     }
 }
