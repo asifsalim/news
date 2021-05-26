@@ -5,6 +5,7 @@
   --color-header-bottom-font:#fff;
   --color-black:#000;
   --color-grey-light:#dacece91;
+  --color-black-2:#0a0908;
 }
 
 * {
@@ -25,6 +26,18 @@ html {
 
 body {
   font-family: 'Lato', sans-serif;
+}
+
+.banner-header {
+  font-size: 1.8rem;
+  color: var(--color-header-bottom-font);
+  width: 14rem;
+}
+
+.banner-header__text {
+  color: var(--color-header-top-items);
+  font-size: 1.2rem;
+  margin-left: -2rem;
 }
 
 .padding-bothside {
@@ -331,6 +344,35 @@ body {
   transition: 1s ease-in-out;
 }
 
-.header {
-  height: 40rem;
+.banner-container {
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+}
+
+.banner-container__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
+  margin-left: 21rem;
+  background-color: var(--color-black-2);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 2.4rem;
+  padding: 1rem 0;
+}
+
+.banner-container__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }

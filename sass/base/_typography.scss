@@ -1,0 +1,12 @@
+.banner-header{
+    font-size: 1.8rem;
+    color: var(--color-header-bottom-font);
+    // background-color: orange;
+   width: 14rem;
+
+   &__text{
+       color: var(--color-header-top-items);
+       font-size: 1.2rem;
+       margin-left: -2rem;
+   }
+}
