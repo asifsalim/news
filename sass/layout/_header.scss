@@ -2,10 +2,10 @@
     background-color: var(--color-header-top-banner);
     color: var(--color-header-top-items);
     height: 5rem;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // padding: 0 25rem;
 
 
     &__icons{
@@ -16,8 +16,8 @@
     }
 
     &__leftside{
-        display: inline-block;
-        margin-left: 8rem;
+        margin-left: 5rem;
+        // background-color: orangered;
 
         &--itembox{
             list-style: none;
@@ -25,24 +25,33 @@
             font-size: 1.4rem;
             font-weight: 300;
             padding:1rem;
-            justify-content: space-between;
+            justify-content: space-around;
             width: 30rem;
-
-
-
-
-        }
-
-        & > * {
-            display: flex;
             align-items: center;
+
+           
+
+
+
+
         }
+
+        &--item-3,
+        &--item-2,
+        &--item-1 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+        }
+
+        
     }
 
     &__rightside{
         margin-right: 10rem;
         width: 45rem;
         padding:1rem;
+        // background-color: orchid;
 
 
 
