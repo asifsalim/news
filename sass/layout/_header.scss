@@ -16,7 +16,7 @@
     }
 
     &__leftside{
-        margin-left: 5rem;
+
         // background-color: orangered;
 
         &--itembox{
@@ -29,7 +29,7 @@
             width: 30rem;
             align-items: center;
 
-           
+
 
 
 
@@ -44,7 +44,7 @@
                     align-items: center;
         }
 
-        
+
     }
 
     &__rightside{
@@ -107,8 +107,9 @@
 
 .header-middle{
 
+
     &__logo-box{
-        margin-left: 8rem;
+
         display: block;
         // padding-left: 25rem;
     }
@@ -125,9 +126,11 @@
     font-size: 1.5rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     box-shadow: 0 1rem 2rem rgba($color-box-shadow,.15);
-    // padding: 0 25rem;
+
+
+
 
     &__icons {
         height: 1.5rem;
@@ -183,6 +186,9 @@
 
 
 
+
+
+
         & > * {
             padding: 0 1.5rem;
             display: flex;
@@ -206,6 +212,7 @@
         align-items: center;
         position: relative;
 
+
         &:hover > &--text {
             width: 20rem;
             padding: 1rem;
@@ -216,7 +223,8 @@
             position: absolute;
             top: 15%;
             right: 5%;
-            margin-right: 2rem;
+            margin-right: -2rem;
+
 
         }
 
@@ -225,6 +233,7 @@
             width: 2.4rem;
             fill: currentColor;
             margin-right: -2rem;
+
         }
 
 
