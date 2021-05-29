@@ -48,10 +48,9 @@
     }
 
     &__rightside{
-        margin-right: 10rem;
+        
         width: 45rem;
-        padding:1rem;
-        // background-color: orchid;
+        
 
 
 
@@ -149,12 +148,13 @@
         color:var(--color-header-bottom-f);
         border-bottom: 1px solid transparent;
         position: relative;
+        
 
 
         &::before{
             content: "";
             position: absolute;
-            bottom: -20px;
+            bottom: -22px;
             left: 0;
             width: 100%;
             height: 2px;
@@ -166,10 +166,6 @@
             opacity: 1;
 
         }
-
-
-
-
 
     }
 
@@ -183,6 +179,7 @@
         align-items: center;
         text-transform: capitalize;
         justify-content: space-between;
+        flex: 0 0 65%;
 
 
 
@@ -199,69 +196,4 @@
 
     }
 
-
-
-
-
-
-
-    &__search-box{
-        // background-color: orangered;
-        height: 4rem;
-        display: flex;
-        align-items: center;
-        position: relative;
-
-
-        &:hover > &--text {
-            width: 20rem;
-            padding: 1rem;
-        }
-
-        &:hover > &--btn{
-            color: var(--color-black);
-            position: absolute;
-            top: 15%;
-            right: 5%;
-            margin-right: -2rem;
-
-
-        }
-
-        &--icons {
-            height: 2.4rem;
-            width: 2.4rem;
-            fill: currentColor;
-            margin-right: -2rem;
-
-        }
-
-
-        &--text{
-            border: none;
-            // padding: 1rem;
-            border-radius: 100px;
-            font-family: inherit;
-            font-size: inherit;
-            color: var(--color-header-top-items);
-            width: 0;
-            // flex-grow: 1;
-            transition: .4s;
-
-            &:focus{
-                outline: none;
-            }
-
-            &::-webkit-input-placeholder{
-                font-family: inherit;
-
-            }
-        }
-
-        &--btn{
-            transition: .4s;
-            cursor: pointer;
-            color: var(--color-header-bottom-font);
-        }
-    }
 }
