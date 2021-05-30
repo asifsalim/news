@@ -1,11 +1,12 @@
 :root {
-  --color-header-top-banner:#1D1D1D;
-  --color-header-top-items:#999;
-  --color-header-bottom-navbar:#da0000;
-  --color-header-bottom-font:#fff;
+  --color-dark-black-1:#1D1D1D;
   --color-black:#000;
-  --color-grey-light:#dacece91;
   --color-black-2:#0a0908;
+  --color-grey-1:#999;
+  --color-grey-light:#dacece91;
+  --color-grey-light-1:#E9ECEF;
+  --color-deep-red:#da0000;
+  --color-white:#fff;
 }
 
 * {
@@ -40,6 +41,17 @@ body {
   margin-left: -2rem;
 }
 
+.tertiary-header {
+  color: var(--color-white);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.subheader {
+  color: var(--color-grey-1);
+  font-size: 1.2rem;
+}
+
 .padding-bothside {
   padding: 0 1.5rem;
 }
@@ -47,6 +59,10 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 15rem;
+}
+
+.scrolling-background {
+  background-color: var(--color-grey-light-1);
 }
 
 .search {
@@ -106,8 +122,8 @@ body {
 }
 
 .header-top {
-  background-color: var(--color-header-top-banner);
-  color: var(--color-header-top-items);
+  background-color: var(--color-dark-black-1);
+  color: var(--color-grey-1);
   height: 5rem;
   width: auto;
   display: -webkit-box;
@@ -162,7 +178,7 @@ body {
 
 .header-top__rightside__link:link, .header-top__rightside__link:visited {
   text-decoration: none;
-  color: var(--color-header-bottom-font);
+  color: var(--color-white);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,16 +188,16 @@ body {
 }
 
 .header-top__rightside__link:link:hover, .header-top__rightside__link:visited:hover {
-  color: var(--color-header-top-items);
+  color: var(--color-grey-1);
 }
 
 .header-top__rightside--social-link:link, .header-top__rightside--social-link:visited {
   text-decoration: none;
-  color: var(--color-header-top-items);
+  color: var(--color-grey-1);
 }
 
 .header-top__rightside--social-link:link:hover, .header-top__rightside--social-link:visited:hover {
-  color: var(--color-header-bottom-font);
+  color: var(--color-deep-red);
 }
 
 .header-top__rightside__box {
@@ -197,7 +213,7 @@ body {
 
 .header-top__rightside__box > *:not(:last-child) {
   padding: 0 1rem;
-  border-right: 1px solid var(--color-header-top-items);
+  border-right: 1px solid var(--color-grey-1);
 }
 
 .header-top__rightside__box > * {
@@ -218,9 +234,9 @@ body {
 }
 
 .header-bottom {
-  background-color: var(--color-header-bottom-navbar);
+  background-color: var(--color-deep-red);
   height: 6rem;
-  color: var(--color-header-bottom-font);
+  color: var(--color-white);
   font-size: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -256,7 +272,7 @@ body {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: var(--color-header-bottom-font);
+  background-color: var(--color-white);
   opacity: 0;
 }
 
@@ -322,7 +338,7 @@ body {
 }
 
 .header-features__links:link, .header-features__links:visited {
-  color: var(--color-header-top-items);
+  color: var(--color-grey-1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,40 +356,56 @@ body {
 }
 
 .header-features__links:hover {
-  color: var(--color-header-bottom-navbar);
+  color: var(--color-deep-red);
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
 }
 
-.banner-container {
-  height: 10rem;
+.scrolling-news {
+  margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.banner-container__title {
+.scrolling-news__title {
+  background-color: var(--color-black);
+  padding: 1rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 20%;
-          flex: 0 1 20%;
-  margin-left: 21rem;
-  background-color: var(--color-black-2);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 2.4rem;
-  padding: 1rem 0;
+      -ms-flex: 0 0 15%;
+          flex: 0 0 15%;
 }
 
-.banner-container__text {
+.scrolling-news__textbox {
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 1rem 0;
+}
+
+.scrolling-news__links:link, .scrolling-news__links:visited {
+  text-decoration: none;
+  color: var(--color-black-2);
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+.scrolling-news__links:link:hover, .scrolling-news__links:visited:hover {
+  color: var(--color-deep-red);
 }

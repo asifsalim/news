@@ -111,7 +111,7 @@
         <li class="header-bottom__navitems--3"><a href="#" class="header-bottom__link">national</a></li>
         <li class="header-bottom__navitems--4"><a href="#" class="header-bottom__link">financial</a></li>
         <li class="header-bottom__navitems--5"><a href="#" class="header-bottom__link">entertainment</a></li>
-        
+
         <li class="header-bottom__navitems--7"><a href="#" class="header-bottom__link">technology</a></li>
         <li class="header-bottom__navitems--8"><a href="#" class="header-bottom__link">travel</a>
           <svg class="header-bottom__icons">
@@ -126,11 +126,11 @@
             </use>
           </svg>
         </li>
-        
+
       </ul>
 
       <form action="#" class="search">
-        <input type="text" class="search__input" placeholder="search..">
+        <input type="text" class="search__input" placeholder="Search..">
         <button class="search__button">
           <svg class="search__icon">
             <use xlink:href='css/images/sprite.svg#icon-magnifying-glass'>
@@ -139,7 +139,7 @@
         </button>
       </form>
 
-      
+
     </nav>
     <div class="header-features">
       <ul class="header-features__box">
@@ -183,13 +183,24 @@
     </div>
   </header>
   <main>
-    <div class="banner-container">
-      <div class="banner-container__title">
-        <h3 class="banner-header">News Update</h3>
-        <span class="banner-header__text">(Updated 12 mins ago)</span>
+    <div class="scrolling-news container">
+      <div class="scrolling-news__title">
+        <h4 class="tertiary-header">Breaking News</h4>
+        <span class="subheader">(updated 10 mins ago)</span>
       </div>
-      <marquee behavior="scroll" direction="left" class="banner-container__text">
-        <!-- unorder list with link anchor korte hobe -->
+      <marquee behavior="scroll" direction="left" scrollamount="10" class="scrolling-background">
+        <ul class="scrolling-news__textbox">
+          <li class="scrolling-news__items--1"><a href="#" class="scrolling-news__links">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti.
+          </a></li>
+          <li class="scrolling-news__items--2"><a href="#" class="scrolling-news__links">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsam sed commodi.
+          </a></li>
+          <li class="scrolling-news__items--3"><a href="#" class="scrolling-news__links">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </a></li>
+          <li class="scrolling-news__items--4"><a href="#" class="scrolling-news__links">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium.</a></li>
+        </ul>
       </marquee>
     </div>
   </main>

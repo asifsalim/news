@@ -1,0 +1,46 @@
+.scrolling-news{
+
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__title{
+
+        background-color: var(--color-black);
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex: 0 0 15%;
+
+    }
+
+    &__textbox{
+
+        list-style: none;
+        display: flex;
+        padding: 1rem 0;
+
+
+    }
+
+
+    &__links:link,
+    &__links:visited{
+        text-decoration: none;
+        color: var(--color-black-2);
+        font-size: 1.4rem;
+        padding: 1rem;
+
+        &:hover{
+            color: var(--color-deep-red);
+        }
+
+
+
+
+
+
+    }
+}
