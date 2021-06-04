@@ -9,7 +9,7 @@
     &__input{
         font-family: inherit;
         font-size: inherit;
-        color: var(--color-header-top-items);
+        color: var(--color-grey-1);
 
         border: none;
         padding: 1rem;
@@ -24,7 +24,7 @@
 
         &::-webkit-input-placeholder{
             font-weight: 300;
-            color: var(--color-header-top-items);
+            color: var(--color-grey-1);
         }
     }
 
